@@ -6,7 +6,7 @@ import UserInfo from '@/components/UserInfo.vue'
 <template>
   <div class="grid grid-cols-4">
     <NavBar />
-    <div class="col-span-2 w-full h-screen">
+    <div class="col-span-2 h-screen w-full">
       <RouterView />
     </div>
     <UserInfo />
