@@ -12,6 +12,6 @@ defineProps<{
 <template>
   <div class="flex items-center space-x-2">
     <Icon class="text-dark-brand-bg-tertiary/60 h-5 w-5" />
-    <RouterLink :to="to">{{ text }}</RouterLink>
+    <RouterLink :to="to" class="font-bold leading-5">{{ text }}</RouterLink>
   </div>
 </template>
