@@ -6,5 +6,9 @@
     <div class="text-2xl">
       <span>To continue the revision, go to </span><a href="/dashboard">Dashboard</a>
     </div>
+    <div class="pt-10 text-2xl">
+      <span>btw, I couln't find the exact icons so I used </span>
+      <a href="https://heroicons.com/">Heroicons</a> instead
+    </div>
   </main>
 </template>

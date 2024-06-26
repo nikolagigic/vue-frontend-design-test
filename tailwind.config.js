@@ -8,7 +8,8 @@ export default {
           brand: {
             bg: {
               main: '#0C1217',
-              secondary: '#6CADDECC'
+              secondary: '#6CADDECC',
+              tertiary: '#6CADDE99'
             }
           },
           basics: {

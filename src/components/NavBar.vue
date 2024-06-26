@@ -1,10 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import NavLink from './NavLink.vue'
+import {
+  TicketIcon,
+  VideoCameraIcon,
+  UserIcon,
+  ChatBubbleLeftRightIcon
+} from '@heroicons/vue/24/solid'
+</script>
 
 <template>
   <nav class="flex flex-col space-y-4 p-9">
-    <RouterLink to="/contests"><h5 class="">Contests</h5></RouterLink>
-    <RouterLink to="/shows">Shows</RouterLink>
-    <RouterLink to="/hosts">Hosts</RouterLink>
-    <RouterLink to="/threads">Threads</RouterLink>
+    <NavLink to="/contests" text="Contests" :Icon="TicketIcon" />
+    <NavLink to="/shows" text="Shows" :Icon="VideoCameraIcon" />
+    <NavLink to="/hosts" text="Hosts" :Icon="UserIcon" />
+    <NavLink to="/threads" text="Threads" :Icon="ChatBubbleLeftRightIcon" />
   </nav>
 </template>
