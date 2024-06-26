@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-brand-bg-main text-dark-basics-primary; /* Ideally this would be dark:bg-dark-brand-bg-main, but we dont have the light theme in the figma design */
+
+  a {
+    @apply transition-colors duration-300 text-dark-brand-bg-secondary/80;
+  }
+  a:hover {
+    @apply text-dark-brand-bg-secondary/100;
+  }
+}
