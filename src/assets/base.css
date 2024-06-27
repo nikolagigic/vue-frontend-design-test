@@ -28,6 +28,6 @@ body {
   }
 
   h5 {
-    @apply font-['freeman'] font-bold leading-5 text-dark-brand-bg-secondary/80;
+    @apply font-['freeman'] font-bold leading-5;
   }
 }
