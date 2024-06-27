@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Freeman';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+}
 
 body {
   @apply bg-dark-brand-bg-main text-dark-basics-primary; /* Ideally this would be dark:bg-dark-brand-bg-main, but we dont have the light theme in the figma design */
@@ -10,5 +21,13 @@ body {
   }
   a:hover {
     @apply text-dark-brand-bg-secondary/100;
+  }
+
+  h3 {
+    @apply font-['freeman'] text-xl leading-[22px];
+  }
+
+  h5 {
+    @apply font-['freeman'] font-bold leading-5 text-dark-brand-bg-secondary/80;
   }
 }
