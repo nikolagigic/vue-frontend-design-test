@@ -16,9 +16,10 @@ const restOfShows = followingShows.filter((show) => !show.live)
       >
         <ChevronLeftIcon class="text-dark-brand-primary h-5 w-5" />
       </div>
-      <span class="text-xl font-bold leading-[22px] text-white
-        group-hover:text-dark-brand-primary transition-colors"
-      ">Browse All Shows</span>
+      <span
+        class="group-hover:text-dark-brand-primary text-xl font-bold leading-[22px] text-white transition-colors"
+        >Browse All Shows</span
+      >
     </button>
     <div class="w-full overflow-hidden border-x border-gray-700/50">
       <h3 class="p-4 uppercase"><span class="text-dark-basics-accent-red">live</span> now</h3>
