@@ -10,7 +10,7 @@ const restOfShows = followingShows.filter((show) => !show.live)
 
 <template>
   <main class="h-full w-full border-r border-gray-700/50">
-    <button class="group flex items-center space-x-3.5 py-10 pl-5">
+    <button class="group flex items-center space-x-3.5 py-7 pl-5 sm:py-10">
       <div
         class="flex shrink-0 transform items-center justify-center rounded-full bg-dark-brand-bg-secondary/10 p-2.5 transition-transform group-hover:scale-110"
       >

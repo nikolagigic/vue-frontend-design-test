@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import DashboardLayout from '@/layouts/DashboardLayout.vue'
 
 const router = createRouter({
+  linkActiveClass: '!text-white',
+  linkExactActiveClass: '!text-white',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
