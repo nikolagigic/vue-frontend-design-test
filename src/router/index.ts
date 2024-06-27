@@ -19,9 +19,24 @@ const router = createRouter({
       component: DashboardLayout,
       children: [
         {
+          path: 'contests',
+          name: 'contests',
+          component: () => import('../views/Contests/ContestsView.vue')
+        },
+        {
           path: 'shows',
           name: 'shows',
           component: () => import('../views/Shows/ShowsView.vue')
+        },
+        {
+          path: 'hosts',
+          name: 'hosts',
+          component: () => import('../views/Hosts/HostsView.vue')
+        },
+        {
+          path: 'threads',
+          name: 'threads',
+          component: () => import('../views/Threads/ThreadsView.vue')
         }
       ]
     }
