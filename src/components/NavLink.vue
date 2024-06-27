@@ -10,10 +10,14 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex items-center space-x-2">
+  <div class="group flex items-center space-x-2">
     <Icon class="h-5 w-5 text-dark-brand-bg-tertiary/60" />
     <RouterLink :to="to"
-      ><h5>{{ text }}</h5></RouterLink
+      ><h5
+        class="group-hover:text-dark-brand-primary text-sm font-medium leading-[22px] text-white transition-colors"
+      >
+        {{ text }}
+      </h5></RouterLink
     >
   </div>
 </template>
