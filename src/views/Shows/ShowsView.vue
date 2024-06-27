@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ShowCard from './components/ShowCard.vue'
-import { followingShows } from './mock-data'
+import BigShowCard from './components/BigShowCard.vue'
+import { followingShows, allShows } from './mock-data'
 
 const liveShows = followingShows.filter((show) => show.live)
 const restOfShows = followingShows.filter((show) => !show.live)
@@ -28,6 +29,21 @@ const restOfShows = followingShows.filter((show) => !show.live)
       <div class="flex w-full space-x-5 overflow-auto px-4 pb-4">
         <ShowCard
           v-for="show in restOfShows"
+          :key="show.id"
+          :id="show.id"
+          :live="show.live"
+          :title="show.title"
+          :cast="show.cast"
+          :watchers="show.watchers"
+          :thumbnail="show.thumbnail"
+        />
+      </div>
+    </div>
+    <div class="w-full overflow-hidden">
+      <h3 class="p-4 uppercase">all shows</h3>
+      <div class="flex w-full space-x-5 overflow-auto px-4 pb-4">
+        <BigShowCard
+          v-for="show in allShows"
           :key="show.id"
           :id="show.id"
           :live="show.live"
