@@ -9,6 +9,7 @@ export default {
       colors: {
         dark: {
           brand: {
+            primary: '#6CADDE',
             bg: {
               main: '#0C1217',
               secondary: '#6CADDECC',
